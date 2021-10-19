@@ -223,8 +223,8 @@ class crack:
  \033[37;1m[\033[41;1m ZAHIB ACCOUNT CLONING \033[00;1m\033[37;1m ]\n
 
  \033[32;1mCreator \033[37;1m: \033[33;1mkarma David
-"""
-		self.jalan(f"[!] Welcome {self.nama} Happy Using\n")
+""")	
+	self.jalan(f"[!] Welcome {self.nama} Happy Using\n")
 		print('[1]. Crack ID From Public/Friend\n[2]. Crack ID From Followers\n[3]. Check Crack Results\n[4]. Setting Useragent\n[5]. Logout Script\n[6]. Report Bugs or Errors')
 		print(f'+'+'-'*45+'+\n')
 		pil=input('[+] Select: ')
